@@ -1,0 +1,18 @@
+[
+  {
+    "id": "F-001",
+    "question": "다음 중 기초 관련 설명으로 옳은 것은?",
+    "images": ["images/foundation/f001.png"],
+    "choices": ["보기1", "보기2", "보기3", "보기4"],
+    "answer": 2,
+    "explain": "해설은 여기에 작성합니다."
+  },
+  {
+    "id": "F-002",
+    "question": "다음 도면을 보고 물음에 답하시오.",
+    "images": ["images/foundation/f002.jpg", "images/foundation/f003.jpg"],
+    "choices": ["A", "B", "C", "D"],
+    "answer": 4,
+    "explain": "이미지가 2장 이상일 때도 이렇게 배열로 넣으면 됩니다."
+  }
+]
