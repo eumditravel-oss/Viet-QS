@@ -1,53 +1,128 @@
-body {
-  margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
-  background: #f7f5ef; /* 아이보리 */
-  color: #333;
+:root{
+  --bg: #f7f2e8;        /* 아이보리 배경 */
+  --card: #ffffff;
+  --line: #e7dccb;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+  --accent: #c88f2d;    /* 따뜻한 포인트 */
+  --accent2:#f3e1bf;
 }
 
-.intro {
-  padding: 40px 20px;
-  text-align: center;
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 
-.intro h1 {
-  font-size: 32px;
-  margin-bottom: 16px;
+.wrap{
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.notice {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 24px;
+.hero{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 22px;
 }
 
-.download-btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #d8cfc4;
-  color: #000;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+.title{margin:0 0 8px; font-size:28px}
+.sub{margin:0 0 14px; color:var(--muted); line-height:1.5}
+.hint{margin:12px 0 0; color:var(--muted); font-size:13px}
+
+.card{
+  margin-top: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
 }
 
-.menu {
-  max-width: 600px;
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+.sectionTitle{margin:0 0 10px; font-size:16px}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
 }
 
-.menu button {
-  padding: 16px;
-  font-size: 16px;
+.part{
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
   background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  cursor: pointer;
+  cursor:pointer;
+  font-size: 15px;
+}
+.part:hover{background: #fffaf0}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  text-decoration:none;
+  cursor:pointer;
+  min-width: 140px;
+}
+.btn.primary{
+  border-color: var(--accent);
+  background: var(--accent2);
 }
 
-.menu button:hover {
-  background: #eee;
+.footer{
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+  padding: 18px 0 8px;
+}
+
+/* guide page */
+.topbar{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.link{color: var(--accent); text-decoration:none; font-weight:700}
+.pill{
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  font-size: 13px;
+}
+
+.qTitle{margin:0 0 12px}
+.textArea{margin-top: 10px}
+.qText{margin:0; line-height:1.7}
+
+.imageArea{margin: 10px 0 8px}
+.qImage{
+  width:100%;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  display:block;
+}
+
+.nav{
+  margin-top: 16px;
+  display:flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hidden{display:none}
+
+@media (min-width: 720px){
+  .grid{grid-template-columns: repeat(3, minmax(0, 1fr));}
 }
