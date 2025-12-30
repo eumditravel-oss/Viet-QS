@@ -1,36 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>Viet QS 시험문제</title>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viet QS 안내</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <main class="wrap">
+    <header class="hero">
+      <h1 class="title">Viet QS 시험문제</h1>
+      <p class="sub">
+        시작에 앞서 해당 프로그램을 다운받아 실행 해 주세요.
+      </p>
 
-  <!-- 🔹 시작 안내 영역 -->
-  <section class="intro">
-    <h1>Viet QS 시험문제</h1>
+      <!-- ✅ 프로그램 다운로드 링크: 여기 파일명만 네 파일에 맞게 바꾸면 됨 -->
+      <a class="btn primary" href="downloads/VietQSProgram.zip" download>
+        프로그램 다운로드
+      </a>
 
-    <p class="notice">
-      시작에 앞서 <strong>해당 프로그램을 먼저 다운로드하여 실행</strong>해 주세요.<br />
-      본 페이지는 각 파트별 지문 안내용입니다.
-    </p>
+      <p class="hint">
+        ※ 다운로드가 안되면, 위 파일을 우클릭 → “다른 이름으로 저장”
+      </p>
+    </header>
 
-    <a class="download-btn" href="https://다운로드링크">
-      프로그램 다운로드
-    </a>
-  </section>
+    <section class="card">
+      <h2 class="sectionTitle">파트 선택</h2>
+      <div class="grid">
+        <button class="part" data-cat="foundation">1. 기초</button>
+        <button class="part" data-cat="column">2. 기둥</button>
+        <button class="part" data-cat="beam">3. 보</button>
+        <button class="part" data-cat="slab">4. 슬라브</button>
+        <button class="part" data-cat="wall">5. 벽</button>
+        <button class="part" data-cat="steel">6. 철골</button>
+      </div>
+    </section>
 
-  <!-- 🔹 파트 선택 영역 -->
-  <section class="menu">
-    <button data-part="foundation">1. 기초</button>
-    <button data-part="column">2. 기둥</button>
-    <button data-part="beam">3. 보</button>
-    <button data-part="slab">4. 슬라브</button>
-    <button data-part="wall">5. 벽</button>
-    <button data-part="steel">6. 철골</button>
-  </section>
+    <footer class="footer">© Viet QS</footer>
+  </main>
 
   <script src="main.js"></script>
 </body>
