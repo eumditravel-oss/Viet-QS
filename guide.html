@@ -3,21 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>파트 안내</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>파트 안내 - Viet QS</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="container">
-
-    <header class="top">
-      <a href="index.html">← 처음으로</a>
-      <h2 id="title"></h2>
+  <main class="wrap">
+    <header class="topbar">
+      <a class="link" href="index.html">← 파트 선택</a>
+      <div class="pill" id="partName">파트</div>
+      <div class="pill" id="progress">1 / 1</div>
     </header>
 
-    <section id="content"></section>
+    <section class="card">
+      <h2 class="qTitle" id="title">안내 1</h2>
 
+      <!-- ✅ 이미지가 없으면 이 영역이 통째로 숨겨짐 -->
+      <div id="imageArea" class="imageArea hidden">
+        <img id="qImage" class="qImage" alt="안내 이미지" />
+      </div>
+
+      <div class="textArea">
+        <p id="text" class="qText"></p>
+      </div>
+
+      <div class="nav">
+        <button id="btnHome" class="btn">처음으로</button>
+        <button id="btnNext" class="btn primary">다음</button>
+      </div>
+    </section>
   </main>
 
-  <script src="assets/js/guide.js"></script>
+  <script src="guide.js"></script>
 </body>
 </html>
