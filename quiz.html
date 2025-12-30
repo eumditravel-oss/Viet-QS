@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>문제 풀이 - Viet QS</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <a class="link" href="index.html">← 카테고리로</a>
+      <div class="topbar-right">
+        <span id="catName" class="pill">카테고리</span>
+        <span id="progress" class="pill">0 / 0</span>
+      </div>
+    </header>
+
+    <section class="panel">
+      <h2 id="qTitle" class="q-title">문제</h2>
+      <p id="qText" class="q-text"></p>
+
+      <!-- 이미지 영역: 여러 장도 가능 -->
+      <div id="imgWrap" class="img-wrap"></div>
+
+      <div id="choices" class="choices"></div>
+
+      <div class="actions">
+        <button id="btnPrev" class="btn">이전</button>
+        <button id="btnCheck" class="btn primary">정답 확인</button>
+        <button id="btnNext" class="btn">다음</button>
+      </div>
+
+      <div id="result" class="result hidden"></div>
+    </section>
+  </main>
+
+  <script src="assets/js/quiz.js"></script>
+</body>
+</html>
