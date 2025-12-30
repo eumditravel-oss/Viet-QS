@@ -1,2 +1,0 @@
-# Viet-QS
-Exam
