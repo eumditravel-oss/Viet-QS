@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f7f5ef; /* 아이보리 */
+  color: #333;
+}
+
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.notice {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #d8cfc4;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.menu {
+  max-width: 600px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.menu button {
+  padding: 16px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: #eee;
+}
